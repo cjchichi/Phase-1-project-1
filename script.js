@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const detailComment = document.getElementById("detail-comment"); 
     const newRamenForm = document.getElementById("new-ramen-form"); 
 
-    // Function to display ramen images
+    // display ramen images
     function displayRamens() {
         ramens.forEach((ramen) => {
             const img = document.createElement("img");
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Function to handle ramen image click
+    // image click
     function handleClick(ramen) {
         detailImage.src = ramen.image;
         detailName.textContent = ramen.name;
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
         detailComment.textContent =` Comment: ${ramen.comment}`;
     }
 
-    // Function to handle new ramen form submission
+    // form submission
     function addSubmitListener() {
         newRamenForm.addEventListener("submit", (e) => {
             e.preventDefault();
@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    //  initializing the app
+
     function main() {
         displayRamens();
         addSubmitListener();
