@@ -1,65 +1,38 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Review</title>
-    <!--<script src="db.js"></script>
-    <script src="script.js"></script>-->
-    <link rel="stylesheet" href="style.css">
+    <title>Ramen Rater</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   
-  <header>
-    <h3>Ramen Rater</h3>
-  </header>
+    <div id="header1"></div>
 
-  
-  <!-- Ramen Menu -->
-  <div id="ramen-menu">
-    <!--<img src="https://www.freepik.com/free-ai-image/bowl-with-delicious-ramen_72554344.htm#fromView=search&page=2&position=21&uuid=a0abd953-4788-4218-82c5-31b1a6330815&query=ramen" alt="">
-    <img src="https://www.freepik.com/free-photo/korean-instant-noodle-tteokbokki-korean-spicy-sauce-ancient-food_13902897.htm#fromView=search&page=3&position=15&uuid=a0abd953-4788-4218-82c5-31b1a6330815&query=ramen" alt="">
-    <img src="https://pixabay.com/photos/ramen-japanese-food-cooking-2199962/" alt="">
-    <img src="https://pixabay.com/illustrations/ramen-dish-savory-noodles-soup-8837174/" alt="">
-    <img src="https://www.freepik.com/free-ai-image/steaming-bowl-ramen_414996564.htm#fromView=search&page=2&position=34&uuid=a0abd953-4788-4218-82c5-31b1a6330815&query=ramen" alt="">
-  -->
-    <!-- Ramen Images Here -->
-  </div>
+    <div id="images"></div>
 
-  <!-- Ramen Details -->
-  <div id="ramen-detail">
-    <!--<img class="detail-image" src="images/image-placeholder.jpg" alt="Insert Name Here" />
-    <h2 class="name">Insert Name Here</h2>
-    <h3 class="restaurant">Insert Restaurant Here</h3>
-  
+    <div id="ramen-details">
+        <h2>Ramen Details</h2>
+        <img id="detail-image" src="" alt="Ramen Image" />
+        <p id="detail-name"></p>
+        <p id="detail-restaurant"></p>
+        <p id="detail-rating"></p>
+        <p id="detail-comment"></p>
+    </div>
 
-  <h3>Rating:</h3>
-  <p>
-    <span id='rating-display'>Insert rating here</span> / 10
-  </p>
-  <h3>Comment:</h3>
-  <p id='comment-display'>
-    Insert comment here
-  </p>-->
-  </div>
+    <h2>Add New Ramen</h2>
+    <form id="new-ramen-form">
+        <input type="text" id="name" placeholder="Ramen Name" required />
+        <input type="text" id="restaurant" placeholder="Restaurant" required />
+        <input type="text" id="image" placeholder="Image URL" required />
+        <input type="number" id="rating" placeholder="Rating (1-5)" min="1" max="5" required />
+        <textarea id="comment" placeholder="Comment" required></textarea>
+        <button type="submit">Add Ramen</button>
+    </form>
 
-  <!-- New Ramen Form -->
-  <form id="new-ramen">
-    <h4>Add New Ramen</h4>
-    <label for="name">Name: </label>
-    <input type="text" name="name" id="new-name" placeholder="ramen-name" required/>
-    <label for="restaurant">Restaurant: </label>
-    <input type="text" name="restaurant" id="new-restaurant" placeholder="restaurant" required />
-    <label for="image">Image: </label>
-    <input type="text" name="image" id="new-image" placeholder="Image URL" />
-    <label for="rating">Rating: </label>
-    <input type="number" name="rating" id="new-rating" placeholder="Rating(1-10)" min="1" max="10" required/>
-    <label for="new-comment">Comment: </label>
-    <textarea name="new-comment" id="new-comment" placeholder="Comment" required></textarea>
-    <input type="submit" value="Create" />
-  </form>
-
-  <script src="db.js"></script>
+    <script src="db.js"></script>
     <script src="script.js"></script>
 </body>
-</html>
+</html>       
