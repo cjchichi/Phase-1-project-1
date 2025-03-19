@@ -1,4 +1,4 @@
-Food Review
+# Food Review
 -This application is for reviewing food
 
 # Technologies used
@@ -9,7 +9,7 @@ Food Review
 # How to set it up
 -clone repo link
 -cd into the repo directory
--run it using live server
+-run it using live-server
 
 # Created by 
 -Cynthia Chichi
