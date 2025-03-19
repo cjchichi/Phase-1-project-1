@@ -1,4 +1,4 @@
-# Food Review
+Food Review
 -This application is for reviewing food
 
 # Technologies used
