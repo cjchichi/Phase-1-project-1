@@ -43,10 +43,3 @@ const data = {
   ]
 }; 
 
-
-/*document.querySelector('.detail-image').src = ramen.image;
-   document.querySelector('.detail-image').alt = ramen.name;
-   document.querySelector ('.name').textContent = ramen.name;
-   document.querySelector('.restaurant').textContent = ramen.restaurant;
-   document.getElementById('rating-display').textContent = ramen.rating;
-   document.getElementById('comment-display').textContent = ramen.comment */
