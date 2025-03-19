@@ -40,10 +40,10 @@ body {
 
 #ramen-details {
   text-align: center;
-  float: left;
-  margin-right: 20px;
+  margin:auto;
   padding: 10px;
   border: 1px solid #ccc;
+  display: inline-block;
   border-radius: 5px;
   background-color: #fff;
   
@@ -59,17 +59,15 @@ body {
 form {
   display: flex;
   flex-direction: column;
+  margin-left:700px;
   max-width: 400px;
- /*margin: 0 auto;*/
-  /*padding: 10px;*/
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #fff;
 }
 
 form input, form textarea {
-  margin-bottom: 10px;
-  float: left;
+  margin-bottom: 10px;;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -87,17 +85,4 @@ form button {
 
 form button:hover {
   background-color:black;
-}
-
-/* Responsive Styles */
-
-/*@media (max-width: 600px) {
-  #images {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  #detail-image {
-      width: 100%;
-  }
 }
